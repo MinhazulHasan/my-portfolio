@@ -11,7 +11,7 @@ const Projects = ({ projects, title, showLink }) => {
           projects.map((project, index) => <Project {...project} index={index} key={project.id}></Project>)
         }
       </div>
-      {showLink && <Link to='/projects' className='btn center-btn'>projects</Link>}
+      {showLink && <Link to='/projects' className='btn center-btn'>more projects</Link>}
     </section>
   )
 }

@@ -53,7 +53,7 @@ export const query = graphql`
       }
     }
 
-    allStrapiBlogs(sort: {fields: date, order: DESC}) {
+    allStrapiBlogs(sort: {fields: date, order: DESC}, filter: {featured: {eq: true}}) {
       nodes {
         id
         category

@@ -16,7 +16,7 @@ const data = [
   {
     id: 2,
     icon: <FaLinkedin className="social-icon"></FaLinkedin>,
-    url: "https:www.linkedin.com/in/minhazul-hasan-sohan",
+    url: "https://www.linkedin.com/in/minhazul-hasan-sohan",
   },
   {
     id: 3,
@@ -37,7 +37,7 @@ const data = [
 const links = data.map(link => {
   return (
     <li key={link.id}>
-      <a href={link.url} className="social-link">
+      <a href={link.url} className="social-link" target="_blank">
         {link.icon}
       </a>
     </li>

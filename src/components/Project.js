@@ -2,6 +2,7 @@ import React from "react"
 import Image from "gatsby-image"
 import { FaGithubSquare, FaShareSquare } from "react-icons/fa"
 const Project = ({ description, github, title, url, image, index, stack }) => {
+  console.log("Project Img = ", image);
   return (
     <article className="project">
       <Image fluid={image.childImageSharp.fluid} className="project-img" />
